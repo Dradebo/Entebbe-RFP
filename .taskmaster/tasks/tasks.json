@@ -1,0 +1,111 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "MVP Project Setup",
+        "description": "Set up basic Next.js project with minimal dependencies for MVP",
+        "details": "- Initialize Next.js 14 with TypeScript\n- Set up Tailwind CSS for styling\n- Configure basic ESLint\n- Set up Git repository\n- Create basic folder structure\n- Set up environment variables for development",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [],
+        "subtasks": []
+      },
+      {
+        "id": 2,
+        "title": "MVP Design and Layout",
+        "description": "Create simple, clean design system and basic layouts for MVP pages",
+        "details": "- Define basic color scheme and typography\n- Create simple component library (header, footer, buttons, cards)\n- Design responsive layouts for mobile and desktop\n- Create basic wireframes for all pages\n- Focus on clean, professional appearance\n- Ensure accessibility basics",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          "1"
+        ],
+        "subtasks": []
+      },
+      {
+        "id": 3,
+        "title": "Static Website Pages",
+        "description": "Build all essential website pages with static content",
+        "details": "- Home page with hero section and basic info\n- About page with club information\n- Membership page with types and contact info\n- Facilities page with golf course details\n- Contact page with location and hours\n- Simple navigation and footer\n- Basic SEO meta tags",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          "2"
+        ],
+        "subtasks": []
+      },
+      {
+        "id": 4,
+        "title": "Simple Contact and Inquiry Forms",
+        "description": "Create basic contact forms that email club staff directly",
+        "details": "- Contact form that sends emails to club staff\n- Membership inquiry form\n- Event inquiry form\n- Simple form validation\n- Email notifications to staff\n- No complex backend - just email forwarding\n- Use simple email service (Resend or similar)",
+        "status": "pending",
+        "priority": "medium",
+        "dependencies": [
+          "3"
+        ],
+        "subtasks": []
+      },
+      {
+        "id": 5,
+        "title": "Basic Content Management",
+        "description": "Simple file-based or minimal CMS for basic content updates",
+        "details": "- Simple admin interface for basic content updates\n- Text content editing for main pages\n- Image upload and management\n- News/announcements section\n- Document upload for rules, brochures\n- Basic user authentication for admin\n- File-based storage initially",
+        "status": "pending",
+        "priority": "medium",
+        "dependencies": [
+          "3"
+        ],
+        "subtasks": []
+      },
+      {
+        "id": 6,
+        "title": "Simple Booking System (Manual)",
+        "description": "Create booking inquiry system that emails staff for manual processing",
+        "details": "- Tee time inquiry form with date/time selection\n- Event booking inquiry form\n- Form sends detailed email to staff\n- Staff manually processes bookings\n- No real-time availability checking\n- Simple confirmation emails\n- No payment integration initially",
+        "status": "pending",
+        "priority": "medium",
+        "dependencies": [
+          "4"
+        ],
+        "subtasks": []
+      },
+      {
+        "id": 7,
+        "title": "MVP Testing and Optimization",
+        "description": "Basic testing and performance optimization for MVP launch",
+        "details": "- Cross-browser testing (Chrome, Safari, Firefox)\n- Mobile responsiveness testing\n- Basic performance optimization\n- Image optimization\n- Form functionality testing\n- Basic security measures\n- SEO optimization",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          "5",
+          "6"
+        ],
+        "subtasks": []
+      },
+      {
+        "id": 8,
+        "title": "MVP Deployment and Launch",
+        "description": "Deploy MVP to production and prepare for launch",
+        "details": "- Deploy to Vercel or similar platform\n- Set up custom domain\n- Configure SSL certificate\n- Set up basic monitoring\n- Create launch checklist\n- Prepare staff training materials\n- Document basic maintenance procedures",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          "7"
+        ],
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "projectName": "Entebbe Club Website MVP",
+      "version": "1.0.0",
+      "lastUpdated": "2024-12-19T10:30:00Z",
+      "totalTasks": 8,
+      "type": "MVP",
+      "created": "2025-08-27T16:29:31.444Z",
+      "description": "Tasks for master context",
+      "updated": "2025-08-27T16:29:31.451Z"
+    }
+  }
+}
