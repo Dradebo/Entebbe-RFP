@@ -28,7 +28,7 @@
         "title": "Static Website Pages",
         "description": "Build all essential website pages with static content",
         "details": "- Home page with hero section and basic info\n- About page with club information\n- Membership page with types and contact info\n- Facilities page with golf course details\n- Contact page with location and hours\n- Simple navigation and footer\n- Basic SEO meta tags",
-        "status": "in-progress",
+        "status": "done",
         "priority": "high",
         "dependencies": [
           "2"
@@ -40,7 +40,7 @@
         "title": "Simple Contact and Inquiry Forms",
         "description": "Create basic contact forms that email club staff directly",
         "details": "- Contact form that sends emails to club staff\n- Membership inquiry form\n- Event inquiry form\n- Simple form validation\n- Email notifications to staff\n- No complex backend - just email forwarding\n- Use simple email service (Resend or similar)",
-        "status": "pending",
+        "status": "in-progress",
         "priority": "medium",
         "dependencies": [
           "3"
@@ -105,7 +105,7 @@
       "type": "MVP",
       "created": "2025-08-27T16:29:31.444Z",
       "description": "Tasks for master context",
-      "updated": "2025-08-27T16:54:50.221Z"
+      "updated": "2025-08-27T17:10:20.821Z"
     }
   }
 }
