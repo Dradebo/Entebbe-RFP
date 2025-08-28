@@ -1,6 +1,5 @@
 'use client';
 
-import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import Button from '@/components/ui/Button';
@@ -16,23 +15,23 @@ interface NewsItem {
 }
 
 export default function NewsManagement() {
-  const { data: session, status } = useSession();
   const router = useRouter();
   const [newsItems] = useState<NewsItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
-    if (status === 'unauthenticated') {
+    // Check if user is authenticated
+    const authStatus = sessionStorage.getItem('adminAuthenticated');
+    if (authStatus === 'true') {
+      setIsAuthenticated(true);
+    } else {
       router.push('/admin/login');
     }
-  }, [status, router]);
-
-  useEffect(() => {
-    // Load news items (placeholder for now)
     setIsLoading(false);
-  }, []);
+  }, [router]);
 
-  if (status === 'loading' || isLoading) {
+  if (isLoading) {
     return (
       <div className="min-h-screen bg-neutral-50 flex items-center justify-center">
         <div className="text-center">
@@ -43,7 +42,7 @@ export default function NewsManagement() {
     );
   }
 
-  if (!session) {
+  if (!isAuthenticated) {
     return null;
   }
 

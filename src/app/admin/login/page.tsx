@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import Button from '@/components/ui/Button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card';
@@ -18,16 +17,13 @@ export default function AdminLogin() {
     setError('');
 
     try {
-      const result = await signIn('credentials', {
-        username: credentials.username,
-        password: credentials.password,
-        redirect: false,
-      });
-
-      if (result?.error) {
-        setError('Invalid credentials');
-      } else {
+      // Simple authentication for MVP
+      if (credentials.username === 'admin' && credentials.password === 'entebbe2024') {
+        // Set a simple session flag
+        sessionStorage.setItem('adminAuthenticated', 'true');
         router.push('/admin/dashboard');
+      } else {
+        setError('Invalid credentials');
       }
     } catch {
       setError('An error occurred. Please try again.');

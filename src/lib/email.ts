@@ -68,7 +68,7 @@ export async function sendEmail(data: EmailData) {
       to: [recipient],
       subject: `New ${type} Inquiry: ${subject}`,
       html: emailContent,
-      reply_to: email,
+      replyTo: email,
     });
 
     return { success: true, id: result.data?.id };
@@ -86,7 +86,7 @@ export async function sendEmailFallback(data: EmailData) {
     // Create test account for development
     const testAccount = await nodemailer.createTestAccount();
     
-    const transporter = nodemailer.createTransporter({
+    const transporter = nodemailer.createTransport({
       host: 'smtp.ethereal.email',
       port: 587,
       secure: false,

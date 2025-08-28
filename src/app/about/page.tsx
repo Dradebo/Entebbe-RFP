@@ -29,7 +29,7 @@ export default function AboutPage() {
                 Our Rich History
               </h2>
               <p className="text-lg text-neutral-600 mb-6">
-                Founded with a vision to create Uganda's premier golfing destination, 
+                Founded with a vision to create Uganda&apos;s premier golfing destination, 
                 Entebbe Club has grown from a small local course to a world-class facility 
                 that attracts golfers from around the globe.
               </p>
