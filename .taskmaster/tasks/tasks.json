@@ -40,7 +40,7 @@
         "title": "Simple Contact and Inquiry Forms",
         "description": "Create basic contact forms that email club staff directly",
         "details": "- Contact form that sends emails to club staff\n- Membership inquiry form\n- Event inquiry form\n- Simple form validation\n- Email notifications to staff\n- No complex backend - just email forwarding\n- Use simple email service (Resend or similar)",
-        "status": "in-progress",
+        "status": "done",
         "priority": "medium",
         "dependencies": [
           "3"
@@ -52,7 +52,7 @@
         "title": "Basic Content Management",
         "description": "Simple file-based or minimal CMS for basic content updates",
         "details": "- Simple admin interface for basic content updates\n- Text content editing for main pages\n- Image upload and management\n- News/announcements section\n- Document upload for rules, brochures\n- Basic user authentication for admin\n- File-based storage initially",
-        "status": "pending",
+        "status": "in-progress",
         "priority": "medium",
         "dependencies": [
           "3"
@@ -105,7 +105,7 @@
       "type": "MVP",
       "created": "2025-08-27T16:29:31.444Z",
       "description": "Tasks for master context",
-      "updated": "2025-08-27T17:10:20.821Z"
+      "updated": "2025-08-28T10:48:22.751Z"
     }
   }
 }
