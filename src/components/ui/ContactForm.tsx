@@ -113,7 +113,7 @@ export default function ContactForm({
         setSubmitStatus('error');
         setErrorMessage(result.error || 'Failed to send message. Please try again.');
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
       setErrorMessage('Network error. Please check your connection and try again.');
     } finally {

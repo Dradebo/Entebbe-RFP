@@ -354,7 +354,7 @@ export default function FacilitiesPage() {
             Experience Our Facilities
           </h2>
           <p className="text-xl mb-8 text-secondary-100">
-            Book your tee time and discover why Entebbe Club is Uganda's premier golf destination
+            Book your tee time and discover why Entebbe Club is Uganda&apos;s premier golf destination
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8 py-4 bg-white text-secondary-600 hover:bg-secondary-50">

@@ -89,9 +89,9 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-neutral-600">
-                  Our club is more than just a golf course - it's a community 
-                  where friendships are formed, business relationships flourish, 
-                  and memories are created.
+                                  Our club is more than just a golf course - it&apos;s a community 
+                where friendships are formed, business relationships flourish, 
+                and memories are created.
                 </p>
               </CardContent>
             </Card>

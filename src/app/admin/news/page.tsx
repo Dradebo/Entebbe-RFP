@@ -18,7 +18,7 @@ interface NewsItem {
 export default function NewsManagement() {
   const { data: session, status } = useSession();
   const router = useRouter();
-  const [newsItems, setNewsItems] = useState<NewsItem[]>([]);
+  const [newsItems] = useState<NewsItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {

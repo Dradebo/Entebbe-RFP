@@ -81,7 +81,7 @@ export async function sendEmail(data: EmailData) {
 // Fallback email function using nodemailer (for development)
 export async function sendEmailFallback(data: EmailData) {
   try {
-    const nodemailer = require('nodemailer');
+    const nodemailer = await import('nodemailer');
     
     // Create test account for development
     const testAccount = await nodemailer.createTestAccount();

@@ -1,4 +1,4 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
 import Button from '@/components/ui/Button'
 import ContactForm from '@/components/ui/ContactForm'
 
@@ -15,7 +15,7 @@ export default function ContactPage() {
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-primary-100">
               Get in touch with us for bookings, membership inquiries, or any questions. 
-              We're here to help you experience the best of Entebbe Club.
+              We&apos;re here to help you experience the best of Entebbe Club.
             </p>
           </div>
         </div>
