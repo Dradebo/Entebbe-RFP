@@ -126,6 +126,13 @@ entebbe-club-website/
 
 This project uses Task Master for task tracking. See the `.taskmaster/` directory for current tasks and progress.
 
+## 🛠️ Technical Documentation
+
+For detailed technical information, build issues, and implementation details, see:
+- **[TECHNICAL-NOTES.md](./TECHNICAL-NOTES.md)** - Build issues, solutions, and technical decisions
+- **[DEPLOYMENT.md](./DEPLOYMENT.md)** - Vercel deployment guide
+- **[roadmap/](./roadmap/)** - Complete project roadmap and phases
+
 ## 🎯 MVP Success Criteria
 
 - ✅ Professional website live and functional
